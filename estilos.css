@@ -1,0 +1,328 @@
+/* ===== RESET BÁSICO ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color:#333;
+  background:#f5f5f5;
+}
+
+a{
+  text-decoration:none;
+}
+
+.ancho{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.topbar{
+  background:#2f2f32;
+  color:#eee;
+  font-size:11px;
+}
+
+.topbar_contenido{
+  height:32px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.topbar_info{
+  display:flex;
+  align-items:center;
+  gap:30px;
+}
+
+.topbar_item i{
+  color:#ffc61a;
+  margin-right:8px;
+}
+
+.topbar_social{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.topbar_social a{
+  color:#fff;
+  font-size:15px;
+}
+
+.encabezado{
+  position:relative;
+  color:#fff;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,.45), rgba(0,0,0,.75)),
+    url("imagenes/slide-1.jpg") center/cover no-repeat;
+}
+
+.encabezado_inner{
+  height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  position:relative;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo_cuadro{
+  width:34px;
+  height:34px;
+  background:#ffc61a;
+  border-radius:6px;
+}
+
+.logo_nombre{
+  font-size:18px;
+  font-weight:bold;
+}
+
+#icono_menu{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+  color:#fff;
+}
+
+/* Menú principal */
+.nav_principal ul{
+  list-style:none;
+  display:flex;
+  gap:28px;
+}
+
+.nav_principal a{
+  color:#fff;
+  font-size:13px;
+  text-transform:uppercase;
+}
+
+.nav_principal a:hover{
+  color:#ffc61a;
+}
+
+.hero{
+  height:440px;
+  display:flex;
+  align-items:center;
+  justify-content:center; 
+}
+
+.hero_contenido{
+  max-width:700px;
+  color:#fff;
+  text-align:center;      
+}
+
+.hero_titulo{
+  font-size:64px;        
+  letter-spacing:4px;
+  font-weight:bold;
+  margin-bottom:16px;
+}
+
+.hero_texto{
+  font-size:15px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  margin-bottom:24px;
+}
+
+.btn_amarillo{
+  display:inline-block;
+  padding:14px 32px;
+  background:#ffc61a;
+  color:#111;
+  font-size:13px;
+  text-transform:uppercase;
+  border-radius:2px;
+  transition:background .3s;
+}
+
+.btn_amarillo:hover{
+  background:#e0a800;
+}
+
+.servicios{
+  background:#fff;
+  padding:60px 0 70px;
+}
+
+.titulo_centro{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.titulo_centro h2{
+  font-size:26px;
+  letter-spacing:3px;
+}
+
+.linea_amarilla{
+  width:50px;
+  height:3px;
+  background:#ffc61a;
+  margin:14px auto 0;
+}
+
+.servicios_grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  row-gap:30px;
+}
+
+.servicio_item{
+  width: 30%;
+  text-align:center;
+  padding:10px 14px;
+}
+
+.servicio_icono{
+  width:60px;
+  height:60px;
+  margin:0 auto 16px;
+  border-radius:50%;
+  background:#ffc61a;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.servicio_icono i{
+  font-size:26px;
+  color:#fff;
+}
+
+.servicio_item h3{
+  font-size:14px;
+  margin-bottom:8px;
+}
+
+.servicio_item p{
+  font-size:13px;
+  color:#666;
+}
+
+.historia{
+  background:#f3f3f3;
+  padding:60px 0;
+}
+
+.historia_inner{
+  display:flex;
+  align-items:center;
+  gap:40px;
+}
+
+.historia_texto h2{
+  font-size:24px;
+}
+
+.historia_texto .linea_amarilla{
+  margin-left:0;
+  margin-bottom:16px;
+}
+
+.historia_texto p{
+  font-size:14px;
+  color:#555;
+  margin-bottom:12px;
+}
+
+.historia_imagen img{
+  border-radius:4px;
+}
+
+
+.pie_superior{
+  background:#36363a;
+  padding:26px 0;
+}
+
+.pie_logo_centro{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  color:#fff;
+}
+
+.pie_inferior{
+  background:#2a2a2d;
+  padding:10px 0;
+  color:#ddd;
+  font-size:11px;
+}
+
+.pie_inferior_inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.pie_copy span{
+  color:#ffc61a;
+}
+
+.redes_footer{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.redes_footer a{
+  color:#fff;
+  font-size:16px;
+}
+
+@media screen and (max-width: 992px){
+  .servicio_item{
+    width:45%;
+  }
+
+  .historia_inner{
+    flex-direction:column;
+  }
+
+  .pie_inferior_inner{
+    flex-direction:column;
+    gap:8px;
+    text-align:center;
+  }
+
+  .topbar_contenido{
+    flex-direction:column;
+    gap:6px;
+    height:auto;
+    padding:6px 0;
+  }
+
+  .topbar_info{
+    flex-direction:column;
+    gap:4px;
+    width:100%;
+  }
+
+  .topbar_social{
+    justify-content:center;
+  }
+}
